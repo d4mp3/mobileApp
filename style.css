@@ -1,3 +1,7 @@
+/*
+    Styling
+*/
+
 html {
     box-sizing: border-box;
     font-size: 10px;
@@ -75,4 +79,48 @@ a.button {
     background: #B0C4DE;
     color: rgba(0,0,0,0.5);
     padding:1rem;
+}
+
+/*
+    Overall Layout
+*/
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-wrap > * {
+    flex:1 1 auto;
+}
+
+/*
+    Header
+*/
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+    Content
+*/
+
+.content {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*
+    icon bar
+*/
+
+.icon-bar {
+    display: flex;
+}
+
+.icon-bar a {
+    flex:1;
 }
